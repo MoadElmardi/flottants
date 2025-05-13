@@ -1,0 +1,16 @@
+--- Résultats sur 100 répétitions ---
+*** FheInt64:
+Chiffrement: 3.535171ms
+Génération des clés: 1.094957687s
+Addition homomorphe : moyenne = 782.65927ms
+Soustraction homomorphe : moyenne = 762.669487ms
+Multiplication homomorphe : moyenne = 13.031773567s
+Division homomorphe : moyenne = 74.999825657s
+ET binaire : moyenne = 226.110589ms
+OU binaire : moyenne = 228.170855ms
+XOR binaire : moyenne = 226.719395ms
+Egalité : moyenne = 349.682782ms
+Inégalité : moyenne = 349.317717ms
+Supérieur strictement : moyenne = 414.95611ms
+Supérieur ou égal : moyenne = 411.9551ms
+Déchiffrement : moyenne = 71.316µs
