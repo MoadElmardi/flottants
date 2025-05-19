@@ -1,5 +1,6 @@
 --- Résultats sur 100 répétitions ---
-*** FheInt64:
+
+*** FheInt64 1e3:
 Chiffrement: 3.535171ms
 Génération des clés: 1.094957687s
 Addition homomorphe : moyenne = 782.65927ms
@@ -14,3 +15,39 @@ Inégalité : moyenne = 349.317717ms
 Supérieur strictement : moyenne = 414.95611ms
 Supérieur ou égal : moyenne = 411.9551ms
 Déchiffrement : moyenne = 71.316µs
+*** FheInt64 1e6:
+Chiffrement: 3.619915ms
+Génération des clés: 1.08326463s
+Addition homomorphe : moyenne = 814.207712ms
+Soustraction homomorphe : moyenne = 801.113175ms
+Multiplication homomorphe : moyenne = 14.055032123s
+Division homomorphe : moyenne = 79.121153683s
+ET binaire : moyenne = 241.049094ms
+OU binaire : moyenne = 242.838415ms
+XOR binaire : moyenne = 241.592229ms
+Egalité : moyenne = 370.338026ms
+Inégalité : moyenne = 366.521332ms
+Supérieur strictement : moyenne = 434.053627ms
+Supérieur ou égal : moyenne = 432.027594ms
+Déchiffrement : moyenne = 71.877µs
+
+*** Programmes FheInt64:
+Soustraction:
+1e3 : 1843317755 nanosecondes (1843,318 ms)
+1e6 : 1827881076 nanosecondes (1827,881 ms)
+1e9 : 1846761044 nanosecondes (1846,761 ms)
+
+Addition:
+1e3 : 1881751513 nanosecondes (1881,752 ms)
+1e6 : 1878958681 nanosecondes (1878,959 ms)
+1e9 : 1847345224 nanosecondes (1847,345 ms)
+
+Multiplication:
+1e3 : 14502131521 nanosecondes (14502,132 ms)
+1e6 : 14542608163 nanosecondes (14542,608 ms)
+1e9 : 14365884401 nanosecondes (14365,884 ms) 
+
+Division:
+1e3 : 76862484510 nanosecondes (76862,485 ms)
+1e6 : 77630934641 nanosecondes (77630,935 ms)
+1e9 : 77440679578 nanosecondes (77440,680 ms)

@@ -3,7 +3,7 @@ use tfhe::{generate_keys, set_server_key, ConfigBuilder, FheInt64};
 use std::time::{Duration, Instant};
 
 const N: usize = 100;
-const SCALE: f64 = 1e3; // Peut essayer aussi 1e6 
+const SCALE: f64 = 1e6; // Peut essayer aussi 1e6 
 
 fn mean(durations: &[Duration]) -> Duration {
     durations.iter().sum::<Duration>() / (durations.len() as u32)

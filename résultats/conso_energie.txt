@@ -1,0 +1,44 @@
+Résultats moyens sur 10 exécutions :
+
+*** Division 1e3:
+Puissance nette moyenne : 60.00801360000000000000 W (± .206148)
+Énergie nette moyenne   : 4573.67185114710000000000 J (± 17.000617)
+*** Division 1e6:
+Puissance nette moyenne : 59.97686580000000000000 W (± .353635)
+Énergie nette moyenne   : 4568.79531627300000000000 J (± 31.662789)
+*** Division 1e9:
+Puissance nette moyenne : 60.24428980000000000000 W (± .269974)
+Énergie nette moyenne   : 4635.95089688230000000000 J (± 79.128784)
+
+*** Multiplication 1e3:
+Puissance nette moyenne : 61.50363580000000000000 W (± .705644)
+Énergie nette moyenne   : 871.70099976900000000000 J (± 9.508045)
+*** Multiplication 1e6:
+Puissance nette moyenne : 61.81483790000000000000 W (± .572020)
+Énergie nette moyenne   : 884.87681288360000000000 J (± 16.267155)
+*** Multiplication 1e9:
+Puissance nette moyenne : 62.56423190000000000000 W (± .528802)
+Énergie nette moyenne   : 901.01986341320000000000 J (± 22.415124)
+
+*** Addition 1e3:
+Puissance nette moyenne : 43.71224690000000000000 W (± .109854)
+Énergie nette moyenne   : 80.11216039940000000000 J (± .949699)
+*** Addition 1e6:
+Puissance nette moyenne : 43.93123750000000000000 W (± .302877)
+Énergie nette moyenne   : 80.00111185170000000000 J (± .470763)
+*** Addition 1e9:
+Puissance nette moyenne : 43.83357700000000000000 W (± .314547)
+Énergie nette moyenne   : 79.75401918990000000000 J (± .603353)
+
+*** Soustraction 1e3:
+Puissance nette moyenne : 43.81041360000000000000 W (± .308702)
+Énergie nette moyenne   : 80.30646847790000000000 J (± 1.634649)
+*** Soustraction 1e6:
+Puissance nette moyenne : 43.95199740000000000000 W (± .417585)
+Énergie nette moyenne   : 79.92233367830000000000 J (± .821488)
+*** Soustraction 1e9:
+Puissance nette moyenne : 44.19810290000000000000 W (± .430946)
+Énergie nette moyenne   : 80.40598505250000000000 J (± 1.052354)
+
+
+

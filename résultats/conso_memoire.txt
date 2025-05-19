@@ -1,0 +1,31 @@
+*** Addition de deux FheInt64 
+- avec 1e6:
+Maximum resident set size (kbytes): 138452
+- avec 1e3:
+Maximum resident set size (kbytes): 138328
+- avec 1e9:
+Maximum resident set size (kbytes): 138240
+
+*** Soustraction de deux FheInt64 
+- avec 1e6:
+Maximum resident set size (kbytes): 139052
+- avec 1e3:
+Maximum resident set size (kbytes): 139036
+- avec 1e9:
+Maximum resident set size (kbytes): 138876
+
+*** Multiplication de deux FheInt64 
+- avec 1e6:
+Maximum resident set size (kbytes): 168560
+- avec 1e3:
+Maximum resident set size (kbytes): 168524
+- avec 1e9:
+Maximum resident set size (kbytes): 168592
+
+*** Division de deux FheInt64 
+- avec 1e6:
+Maximum resident set size (kbytes): 147832
+- avec 1e3:
+Maximum resident set size (kbytes): 148476
+- avec 1e9:
+Maximum resident set size (kbytes): 148672

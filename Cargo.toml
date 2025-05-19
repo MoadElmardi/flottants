@@ -20,5 +20,17 @@ name = "deux_flottants_precision"
 path = "src/precision_temps/deux_flottants_precision.rs"
 
 [[bin]]
+name = "deux_flottants_temps"
+path = "src/precision_temps/deux_flottants_temps.rs"
+
+[[bin]]
+name = "operation"
+path = "src/consommation/operation.rs"
+
+[[bin]]
+name = "operation_temps"
+path = "src/precision_temps/operation_temps.rs"
+
+[[bin]]
 name = "generate_data"
 path = "scripts/generate_data.rs"
