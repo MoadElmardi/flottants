@@ -2,12 +2,14 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 use tfhe::prelude::*;
 use tfhe::{generate_keys, set_server_key, ConfigBuilder, FheInt64};
+// use rug::{Float, float::Round};
+// use rug::Assign;
 
 //const N: usize = 100;
 const SCALE: f64 = 1e3; // Peut essayer aussi 1e6 
 
 fn main() {
-    let file = File::open("./données/float_data.csv").expect("Erreur ouverture fichier");
+    let file = File::open("données/float_data3.csv").expect("Erreur ouverture fichier");
     let reader = BufReader::new(file);
 
     let config = ConfigBuilder::default().build();
@@ -28,9 +30,13 @@ fn main() {
         let line = line.unwrap();
         let parts: Vec<f64> = line.split(',').map(|s| s.parse().unwrap()).collect();
         let (a, b) = (parts[0], parts[1]);
+        // println!("{}", a);
+        // println!("{}", b);
 
         let enc_a = (a * SCALE).round() as i64;
         let enc_b = (b * SCALE).round() as i64;
+        // println!("{}", enc_a);
+        // println!("{}", enc_b);
 
         let fhe_a = FheInt64::encrypt(enc_a, &client_key);
         let fhe_b = FheInt64::encrypt(enc_b, &client_key);
@@ -46,25 +52,43 @@ fn main() {
         let decrypted2: i64 = fhe_result2.decrypt(&client_key);
         let decrypted3: i64 = fhe_result3.decrypt(&client_key);
         let decrypted4: i64 = fhe_result4.decrypt(&client_key);
+        // println!("{}", decrypted3);
+        // println!("{}", decrypted4);
         
         let decoded1 = decrypted1 as f64 / SCALE;
         let decoded2 = decrypted2 as f64 / SCALE;
-        let decoded3 = decrypted3 as f64 / SCALE;
-        let decoded4 = decrypted4 as f64 / SCALE;
+        let decoded3 = decrypted3 as f64 / (SCALE * SCALE);
+        let decoded4 = decrypted4 as f64;
+        // let mut decoded3 = Float::with_val(64, 0);
+        // decoded3.assign(decrypted3);
+        // let mut decoded4 = Float::with_val(64, 0);
+        // decoded4.assign(decrypted4);
+        // println!("{}", decoded3);
+        // println!("{}", decoded4);
 
         let expected1 = a + b;
         let expected2 = a - b;
         let expected3 = a * b;
         let expected4 = a / b;
+        // println!("{}", expected3);
+        // println!("{}", expected4);
 
         let abs_error1 = (decoded1 - expected1).abs();
         let rel_error1 = abs_error1 / expected1.abs().max(1e-8);
         let abs_error2 = (decoded2 - expected2).abs();
         let rel_error2 = abs_error2 / expected2.abs().max(1e-8);
         let abs_error3 = (decoded3 - expected3).abs();
-        let rel_error3 = abs_error3 / expected3.abs().max(1e-8);
+        let rel_error3 = abs_error3/ expected3.abs().max(1e-8);
         let abs_error4 = (decoded4 - expected4).abs();
-        let rel_error4 = abs_error4 / expected4.abs().max(1e-8);
+        let rel_error4 = abs_error4/ expected4.abs().max(1e-8);
+        // let diff_abs_err3: f64 = abs_error3.to_f64_round(Round::Nearest);
+        // let diff_rel_err3: f64 = rel_error3.to_f64_round(Round::Nearest);
+        // let diff_abs_err4: f64 = abs_error4.to_f64_round(Round::Nearest);
+        // let diff_rel_err4: f64 = rel_error4.to_f64_round(Round::Nearest);
+        // println!("{}", abs_error3);
+        // println!("{}", rel_error3);
+        // println!("{}", abs_error4);
+        // println!("{}", rel_error4);
 
         abs_errors1.push(abs_error1);
         rel_errors1.push(rel_error1);
@@ -97,4 +121,5 @@ fn main() {
     println!("---- Division ----------");
     println!("Erreur absolue moyenne: {}", mean_abs4);
     println!("Erreur relative moyenne: {}", mean_rel4);
+
 }

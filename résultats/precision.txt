@@ -1,0 +1,131 @@
+--- Avec l'erreur:
+Avec 1e3:
+---- Addition ----------
+Erreur absolue moyenne: 0.0003887313854319019
+Erreur relative moyenne: 0.0000441811114794933
+---- Soustraction ------
+Erreur absolue moyenne: 0.0003065166711538525
+Erreur relative moyenne: 0.000010184075981104356
+---- Multiplication ----
+Erreur absolue moyenne: 2446173.344767191
+Erreur relative moyenne: 999.0041703264412
+---- Division ----------
+Erreur absolue moyenne: 2.729985919266952
+Erreur relative moyenne: 0.9995989054301666
+
+Avec 1e6:
+---- Addition ----------
+Erreur absolue moyenne: 0.00000034469867861652847
+Erreur relative moyenne: 0.000000023223350555323676
+---- Soustraction ------
+Erreur absolue moyenne: 0.0000003472445560415149
+Erreur relative moyenne: 0.00000002125541434336404
+---- Multiplication ----
+Erreur absolue moyenne: 2448615521.155403
+Erreur relative moyenne: 999998.9943715902
+---- Division ----------
+Erreur absolue moyenne: 2.732283619266953
+Erreur relative moyenne: 0.99999959890543
+
+Avec 1e9:
+---- Addition ----------
+Erreur absolue moyenne: 0.00000000035721152702450353
+Erreur relative moyenne: 0.000000000034627645086557793
+---- Soustraction ------
+Erreur absolue moyenne: 0.00000000032378111525233067
+Erreur relative moyenne: 0.000000000022255931414194978
+---- Multiplication ----
+Erreur absolue moyenne: 4536246380.31153
+Erreur relative moyenne: 5931660.89715941
+---- Division ----------
+Erreur absolue moyenne: 2.7322859169669527
+Erreur relative moyenne: 0.9999999995989053
+
+
+--- Sans l'erreur:
+Avec 1e9:
+---- Addition ----------
+Erreur absolue moyenne: 0.00000000035721152702450353
+Erreur relative moyenne: 0.000000000034627645086557793
+---- Soustraction ------
+Erreur absolue moyenne: 0.00000000032378111525233067
+Erreur relative moyenne: 0.000000000022255931414194978
+---- Multiplication ----
+Erreur absolue moyenne: 2450.096547871294
+Erreur relative moyenne: 1.0015727852740977
+---- Division ----------
+Erreur absolue moyenne: 0.4322859192669546
+Erreur relative moyenne: 0.5989054301666229
+
+Avec 1e6:
+---- Addition ----------
+Erreur absolue moyenne: 0.00000034469867861652847
+Erreur relative moyenne: 0.000000023223350555323676
+---- Soustraction ------
+Erreur absolue moyenne: 0.0000003472445560415149
+Erreur relative moyenne: 0.00000002125541434336404
+---- Multiplication ----
+Erreur absolue moyenne: 0.000019661212458572664
+Erreur relative moyenne: 0.000000019516126926997924
+---- Division ----------
+Erreur absolue moyenne: 0.4322859192669546
+Erreur relative moyenne: 0.5989054301666229
+
+Avec 1e3:
+---- Addition ----------
+Erreur absolue moyenne: 0.0003887313854319019
+Erreur relative moyenne: 0.0000441811114794933
+---- Soustraction ------
+Erreur absolue moyenne: 0.0003065166711538525
+Erreur relative moyenne: 0.000010184075981104356
+---- Multiplication ----
+Erreur absolue moyenne: 0.0197878551041466
+Erreur relative moyenne: 0.00001648464965854094
+---- Division ----------
+Erreur absolue moyenne: 0.4322859192669546
+Erreur relative moyenne: 0.5989054301666229
+
+
+
+Nouvelle expérience:
+Avec 1e9:
+---- Addition ----------
+Erreur absolue moyenne: 0.0000000003223467492929899
+Erreur relative moyenne: 0.00000000013679153653248592
+---- Soustraction ------
+Erreur absolue moyenne: 0.0000000003435883244584659
+Erreur relative moyenne: 0.0000000005139900047658411
+---- Multiplication ----
+Erreur absolue moyenne: 0.0000000005734222568998249
+Erreur relative moyenne: 0.0000000007250872613337386
+---- Division ----------
+Erreur absolue moyenne: 0.4313254660287561
+Erreur relative moyenne: 0.32781721630865884
+
+Avec 1e6:
+---- Addition ----------
+Erreur absolue moyenne: 0.0000002982430187481455
+Erreur relative moyenne: 0.00000014560117190095577
+---- Soustraction ------
+Erreur absolue moyenne: 0.00000029027399681691437
+Erreur relative moyenne: 0.00000027711296873082404
+---- Multiplication ----
+Erreur absolue moyenne: 0.0000005689127919539238
+Erreur relative moyenne: 0.0000006887098756971314
+---- Division ----------
+Erreur absolue moyenne: 0.4313254660287561
+Erreur relative moyenne: 0.32781721630865884
+
+Avec 1e3:
+---- Addition ----------
+Erreur absolue moyenne: 0.0004068764687662707
+Erreur relative moyenne: 0.00018919373392077194
+---- Soustraction ------
+Erreur absolue moyenne: 0.00034865621838836016
+Erreur relative moyenne: 0.00046724666864017257
+---- Multiplication ----
+Erreur absolue moyenne: 0.0006434740706722341
+Erreur relative moyenne: 0.0009161434081026343
+---- Division ----------
+Erreur absolue moyenne: 0.4313254660287561
+Erreur relative moyenne: 0.32781721630865884
