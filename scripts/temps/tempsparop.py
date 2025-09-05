@@ -46,12 +46,14 @@ times_1e6 = [
 # Plotting
 x = range(len(operations))
 plt.figure(figsize=(12, 6))
-plt.bar([i - 0.2 for i in x], times_1e3, width=0.4, label="Échelle 1e3")
-plt.bar([i + 0.2 for i in x], times_1e6, width=0.4, label="Échelle 1e6")
+plt.grid(axis="y", linestyle='--', linewidth=0.5, alpha=0.7)
+plt.bar([i - 0.2 for i in x], times_1e3, width=0.4, label="Échelle 1e3", zorder=3)
+plt.bar([i + 0.2 for i in x], times_1e6, width=0.4, label="Échelle 1e6", zorder=3)
 plt.xticks(x, operations, rotation=45, ha="right")
 plt.ylabel("Temps (ms)")
+plt.yscale("log")  # Échelle logarithmique sur l'axe Y
 plt.title("Comparaison des performances des opérations homomorphes")
-plt.grid()
 plt.legend()
 plt.tight_layout()
 plt.show()
+
